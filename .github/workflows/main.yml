@@ -32,4 +32,6 @@ jobs:
        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.imageName }}:latest
    - name: Runt he Image
      run: docker run -d -P ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.imageName }}:latest
+   - name: List containers
+     run: docker ps
        
