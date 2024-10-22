@@ -29,5 +29,5 @@ jobs:
      with:
        context: .
        push: true
-       tag: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.imageName }}:latest
+       tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.imageName }}:latest
        
